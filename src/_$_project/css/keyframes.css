@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*下to上 动画*/
+@-webkit-keyframes upDown{
+    0%{-webkit-transform:  translate(0, 25%); opacity: 0;}
+    100%{-webkit-transform:  translate(0, 0); opacity: 1;}
+}
+@keyframes upDown{
+    0%{transform: translate(0, 25%); opacity: 0;}
+    100%{transform: translate(0, 0); opacity: 1;}
+}
+
+
+/*下to上 动画*/
+@-webkit-keyframes downUp{
+    0%{-webkit-transform:  translate(0, -25%); opacity: 0;}
+    100%{-webkit-transform:  translate(0, 0); opacity: 1;}
+}
+@keyframes downUp{
+    0%{transform: translate(0, -25%); opacity: 0;}
+    100%{transform: translate(0, 0); opacity: 1;}
+}
+
+/*外to内 动画*/
+@-webkit-keyframes comeIn{
+    0%{-webkit-transform: scale(1.185); opacity: 0;}
+    100%{-webkit-transform: scale(1); opacity: 1;}
+}
+@keyframes comeIn{
+    0%{transform: scale(1.185); opacity: 0;}
+    100%{transform: scale(1); opacity: 1;}
+}
+
+.daterangepicker,.datetimepicker{/*下往上动画*/
+    -webkit-animation: upDown 0.3s cubic-bezier(.15, .73, .37, 1.2);
+    animation: upDown 0.3s cubic-bezier(.15, .73, .37, 1.2);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  .content {
+    width: 100%;
+    background-color: #fff;
+
+    .search_content {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      .left,
+      .right {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .left {
+        .item {
+          width: 50px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          display: inline-block;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+
+        .query {
+          // background-color: #1190FC;
+          color: #018ef5;
+          border: 1px solid #018ef5;
+        }
+
+        .lastMonth,
+        .thisMonth {
+          background-color: #fff;
+          color: #018ef5;
+          border: 1px solid #018ef5;
+          border-left: 0;
+        }
+
+        .thisMonth {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+
+        .end-of {
+          font-size: 14px;
+          color: #222222;
+          margin-left: 13px;
+        }
+
+        .active {
+          background-color: #1190FC;
+          color: #fff;
+        }
+      }
+    }
+
+    #myChart {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+  }
+}

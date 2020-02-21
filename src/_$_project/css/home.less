@@ -1,0 +1,356 @@
+.container {
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.top_title {
+  background-color: #fff;
+  padding: 5px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E2E2E2;
+
+  .title_left {
+    margin-left: 24px;
+
+    img {
+      display: inline-block;
+      width: 30px;
+      height: 24px;
+      vertical-align: middle;
+    }
+
+    span {
+      font-size: 17px;
+      color: #333;
+      margin-left: 9px;
+      vertical-align: middle;
+      font-weight: bold;
+      ;
+    }
+  }
+
+  .title_right {
+    margin-right: 46px;
+
+    .item {
+      display: inline-block;
+      width: 140px;
+      border-right: 1px solid #E2E2E2;
+      padding: 0 20px;
+      box-sizing: border-box;
+
+      .detail_number {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      // text-align: center;
+    }
+
+    .urgency_number {
+      color: #D40D2C;
+    }
+  }
+}
+
+.car_select_Info {
+  background-color: #fff;
+  position: relative;
+
+  .car {
+    width: 83px;
+    height: 42px;
+    // background-color: #018ef5;
+    // color: #fff;
+    text-align: center;
+    line-height: 42px;
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .driver {
+    width: 83px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 15px;
+    display: inline-block;
+    border-right: 1px solid #DDDDDD;
+    cursor: pointer;
+  }
+
+  .line {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background-color: #DDDDDD;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .right {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 46px;
+  }
+
+  .search {
+    margin-left: 20px;
+    background-color: #f5f5f5;
+    color: #666666;
+    border: 1px solid #DDDDDD;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+.carInfo {
+    overflow: hidden;
+    position: relative;
+  .carStatus {
+    font-size: 16px;
+    color: #333333;
+    padding: 13px 24px 7px;
+    box-sizing: border-box;
+
+    .car_number {
+      font-size: 12px;
+      color: #333333;
+      margin-left: 20px;
+    }
+  }
+
+  .manyCar {
+    margin-top: 10px;
+    padding: 0 24px;
+    width: 100%;
+    ul {
+      padding-left: 30px;
+      li {
+        width: 165px;
+        height: 150px;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        margin-right: 10px;
+        float: left;
+        margin-bottom: 10px;
+        cursor: pointer;
+        img {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 40px;
+          position: absolute;
+          width: 56px;
+          height: 42px;
+        }
+
+        .use_people {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 0px;
+          position: absolute;
+          width: 104px;
+          height: 23px;
+          box-shadow: 1px 1px 6px #DDDDDD;
+          color: #333333;
+          font-size: 12px;
+          line-height: 23px;
+        }
+
+        .car_status {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 89px;
+          position: absolute;
+        }
+        .defaultDriver{
+          left: 50%;
+          transform: translateX(-50%);
+          top: 89px;
+          position: absolute;
+        }
+
+        .car_detail {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 115px;
+          position: absolute;
+          white-space: nowrap;
+
+          .car_number {
+            border-right: 1px solid #DDDDDD;
+            padding-right: 10px;
+            color: #666666;
+          }
+
+          .car_info {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .driver{
+    ul{
+      li{
+        img{
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          top: 20px;
+        }
+        .car_number{
+          position: absolute;
+          left:50%;
+          top: 79px;
+          transform: translateX(-50%);
+        }
+        .car_status, .car_detail{
+          top:108px ;
+          .driver_people::after{
+            width: 1px;
+            content:"";
+            display: inline-block;
+            height: 15px;
+            background-color:#E2E2E2;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 90%;
+    // transition: height .5s linear;
+    // -moz-transition: height .5s linear;
+    // -webkit-transition: height .5s linear;
+
+    .unfold_shrink {
+      background-color: #f5f7f9;
+      text-align: center;
+      color: #999999;
+      padding: 0;
+      width: 120%;
+      margin-left: -20px;
+      position: relative;
+      img {
+        width: 110px;
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -30px;
+        margin-left: -200px;
+      }
+    }
+    
+    .top{
+      height: 30px;
+      background-color: #ffffff;
+    }
+    .nav {
+      height: 40px;
+      line-height: 40px;
+
+      .number {
+        font-size: 12px;
+      }
+    }
+
+    .time {
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 5px;
+      .text_one {
+        vertical-align: middle;
+        font-size: 14px;
+        color: #222222;
+      }
+
+      .end-of {
+        font-size: 14px;
+        color: #222222;
+        margin-left: 13px;
+      }
+
+    }
+
+    .item {
+      width: 60px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #018ef5;
+      cursor: pointer;
+    }
+
+    .three_day {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      margin-left: 40px;
+    }
+
+    .week,
+    .next_week {
+      background-color: #fff;
+      color: #018ef5;
+      border-left: 0;
+    }
+
+    .next_week {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .ivu-page {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  .show{
+    // height: 500px;
+    
+    max-height: 1000px;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+  .hide{
+    max-height: 50px;
+    // overflow: hidden;
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+  }
+  .upward {
+    // bottom: 300px;
+    // transition: all .5s linear;
+    // -moz-transition: all .5s linear;
+    // -webkit-transition: all .5s linear;
+
+    // animation: myfirst 10s;
+    // -webkit-animation: myfirst 10s;
+    // animation-fill-mode: forwards;
+    /*当动画完成时，动画会停留在最后一帧。*/
+  }
+
+}

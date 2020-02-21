@@ -1,0 +1,234 @@
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    .top{
+        width: 100%;
+        height: 248px;
+        // display: flex;
+        
+        .left{
+            // flex: 2;
+            width: 66%;
+            height: 100%;
+            float: left;
+            background-color: #f5f7f9;
+            display: flex;
+            justify-content: space-between;
+            .item, .itemTwo{
+                flex: 1;
+                // width: 50%;
+                background-color: #fff;
+                box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+                border-radius:4px 4px 0 0;
+                .title{
+                    width: 100%;
+                    line-height: 40px;
+                    border-bottom: 1px solid #f6f6f6;
+                    padding-left: 15px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    color: #333;
+                }
+                .content{
+                    width: 100%;
+                    margin-top: 10px;
+                    ul{
+                        width: 100%;
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        li{
+                            float: left;
+                            width: 25%;
+                            text-align: center;
+                            padding: 5px;
+                            box-sizing: border-box;
+                            .small_box{
+                                background-color: #f8f8f8;
+                                width: 100%;
+                                height: 60px;
+                                line-height: 60px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 5px;
+                                img{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                            span{
+                                color:#66;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .itemTwo{
+                margin-left: 1%;
+                .title{
+                    width: 100%;
+                    line-height: 40px;
+                    border-bottom: 1px solid #f6f6f6;
+                    padding-left: 15px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    color: #333;
+                }
+                .content{
+                    width: 100%;
+                    margin-top: 10px;
+                    ul{
+                        width: 100%;
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        li{
+                            float: left;
+                            width: 50%;
+                            padding: 10px 5px 5px 5px;
+                            box-sizing: border-box;
+                            text-align: left;
+                            .data_hide{
+                                width: 100%;
+                                background-color: #f8f8f8;
+                                padding-top: 10px;
+                                padding-left: 5px;
+                                box-sizing: border-box;
+                                .content_title{
+                                    margin-left: 10px;
+                                    font-size: 12px;
+                                    color: #666;
+                                    // padding-top: 10px;
+                                }
+                                .data{
+                                    margin-left: 10px;
+                                    font-style: normal;
+                                    font-size: 30px;
+                                    font-weight: 300;
+                                    color: #009688;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            // flex: 1;
+            width: 33%;
+            float: left;
+            margin-left: 1%;
+            height: 100%;
+            background-color: #fff;
+            .title{
+                width: 100%;
+                line-height: 40px;
+                border-bottom: 1px solid #f6f6f6;
+                padding-left: 15px;
+                box-sizing: border-box;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+        
+    }
+    .center{
+        // display: flex;
+        width: 100%;
+        height: 395px;
+        margin-top: 15px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        .left{
+            // flex: 2;
+            width: 66%;
+            height: 100%;
+            float: left;
+            background-color: #fff;
+            .title{
+                width: 100%;
+                line-height: 40px;
+                border-bottom: 1px solid #f6f6f6;
+                padding-left: 15px;
+                box-sizing: border-box;
+                font-size: 14px;
+                color: #333;
+            }
+            #myChart{
+                width: 100%;
+                height: 350px;
+            }
+        }
+        .right{
+            // flex: 1;
+            float: left;
+            width: 33%;
+            margin-left: 1%;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .report, .monitoring{
+                flex: 1;
+                background-color: #fff;
+                .title{
+                    width: 100%;
+                    line-height: 40px;
+                    border-bottom: 1px solid #f6f6f6;
+                    padding-left: 15px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    color: #333;
+                }
+                .content{
+                    padding:0 15px;
+                    box-sizing: border-box;
+                    .describe{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        // margin-top: 10px;
+                        .number{
+                            font-size: 25px;
+                            font-weight: 500;
+                            color:#666;
+                        }
+                        .data{
+                            color: #999;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .monitoring{
+                margin-top: 15px;
+            }
+            
+        }
+    }
+    .bottom{
+        width: 100%;
+        margin-top: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        .left{
+           width: 66%;
+        //    display: inline-block;
+           float: left;
+        }
+        .right{
+            width: 33%;
+            // display: inline-block;
+            float: left;
+            background-color: #fff;
+            margin-left: 1%;
+            height: 390px;
+            #myChart2{
+                width: 100% !important;
+                height: 100%;
+            }
+        }
+    }
+}

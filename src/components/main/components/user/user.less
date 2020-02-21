@@ -1,0 +1,71 @@
+.user{
+  &-avatar-dropdown{
+    cursor: pointer;
+    display: inline-block;
+    // height: 64px;
+    vertical-align: middle;
+    // line-height: 64px;
+    .ivu-badge-dot{
+      top: 16px;
+    }
+  }
+}
+// .title_right {
+//   // margin-right: 46px;
+//   display: inline-block;
+//   .item {
+//     display: inline-block;
+//     width: 140px;
+//     border-right: 1px solid #E2E2E2;
+//     padding: 0 20px;
+//     box-sizing: border-box;
+
+//     .detail_number {
+//       font-size: 16px;
+//       font-weight: bold;
+//     }
+
+//     // text-align: center;
+//   }
+
+//   .urgency_number {
+//     color: #D40D2C;
+//   }
+// }
+.user-avatar-dropdown{
+  .item{
+    display: inline-block;
+    vertical-align: middle;
+    // border-right: 1px solid #E2E2E2;
+    padding: 0 30px;
+    position: relative;
+    box-sizing: border-box;
+    .detail{
+      line-height: 30px;
+    }
+    .detail_number{
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .urgency_number {
+          color: #D40D2C;
+        }
+  }
+  .item::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    // float: right;
+    width: 1px;
+    height: 35px;
+    background-color: #E2E2E2;
+  }
+  .last{
+    margin-right: 50px;
+  }
+}
+

@@ -1,0 +1,118 @@
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.content{
+    background-color: #fff;
+    height: 100%;
+    .search_content{
+        position: relative;
+        .left, .right{
+            display: inline-block;
+        }
+        .right{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right:20px;
+            .item{
+                width: 50px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+            .query{
+                // background-color: #1190FC;
+                color:#018ef5;
+                border: 1px solid #018ef5;
+            }
+            .yesterday, .today, .tomorrow{
+                background-color: #fff;
+                color:#018ef5;
+                border: 1px solid #018ef5;
+                border-left: 0;
+            }
+            .tomorrow{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .end-of{
+                font-size: 14px;
+                color:#222222;
+                margin-left: 13px;
+            }
+            .active{
+                background-color: #1190FC;
+                color:#fff;
+            }
+            .search_condition{
+                margin-bottom: 30px;
+                .search_type{
+                    display: inline-block;
+                    margin-right: 40px;
+                    span{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .nav{
+        height: 40px;
+        line-height: 40px;
+    }
+    .operation{
+        line-height: 65px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        position: relative;
+        .left{
+            .button{
+                margin-right:20px;
+            }
+            .item{
+                width: 50px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .query{
+                background-color: #018ef5;
+                color:#fff;
+            }
+            .yesterday, .today, .tomorrow{
+                background-color: #fff;
+                color:#018ef5;
+                border: 1px solid #018ef5;
+                border-left: 0;
+            }
+            .tomorrow{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .end-of{
+                font-size: 14px;
+                color:#222222;
+                margin-left: 13px;
+            }
+        }
+        .right{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            .button{
+                margin-right:20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/* 重置浏览器 */
+html{-webkit-text-size-adjust: none;}
+body,html{margin:0; padding:0; font-family: "微软雅黑";color:#666; min-width: 1400px;overflow-x: auto;}
+div,form,img,ul,ol,li,dl,dt,dd {margin:0;padding:0;border:0;}
+input,select,h1,h2,h3,h4,h5,h6,object{margin:0;padding:0;}
+input, select, textarea{ font-family: "微软雅黑"; }
+ul,li{list-style-type:none;}
+i{ font-style:normal;}
+a{text-decoration:none; color:#666; outline:none; }
+a:hover{ cursor: hand;color:#666; }
+img{display: block; border: none; vertical-align: middle;max-width: 100%;}
+p,ul{ padding:0; margin:0; }
+button,input,textarea{outline: none !important;}
+
+
+
+
+
+
+
+
+
+/* 公共工具 */
+.pullRight{float: right !important;}
+.pullLeft{float: left !important;}
+.textCenter{text-align: center !important;}
+.textRight{text-align: right !important;}
+.textLeft{text-align: left !important;}
+.blockCenter{ display: block !important;margin: 0 auto !important;}
+.tran3,.textLink,.textLine{transition:all 0.3s ease !important;}
+.textLink,.textLine{cursor: pointer !important;}
+.textLink:hover{color:#5887ef !important;background-color: transparent !important;}
+.textLine:hover{text-decoration: underline;}
+
+
+/*公共样式*/
+.fixedCenter{top: 0;bottom: 0; left: 0;right: 0;margin: auto;}
+.overflowH{overflow: hidden !important;}
+.overflowV{overflow: visible !important;}
+.borderNone{border:none !important;}
+.f_bold{font-weight: bold !important;}
+.f_normal{font-weight: normal !important;}
+.lineH1{line-height: 1 !important;}
+.lineH1d5{line-height: 1.5 !important;}
+.lineH2{line-height: 2 !important;}
+.lineH30{line-height: 30px !important;}
+.lineH34{line-height: 34px !important;}
+.radius0{border-radius: 0 !important;}
+.radius100{border-radius: 100px !important;}
+.shadowNone{box-shadow: none !important;}
+.heightAuto{height: auto !important;}
+.height100{height: 100% !important;}
+.widthAuto{width: auto !important;}
+.width100{width: 100% !important;}
+.marginCenter{margin:0 auto;}
+.margin0{margin: 0 !important;}
+.margin5{margin: 5px !important;}
+.marginT0{margin-top: 0px !important;}
+.marginT5{margin-top: 5px !important;}
+.marginT10{margin-top: 10px !important;}
+.marginT20{margin-top: 20px !important;}
+.marginB10{margin-bottom: 10px !important;}
+.marginB5{margin-bottom: 5px !important;}
+.marginR5{margin-right: 5px !important;}
+.marginL5{margin-left: 5px !important;}
+.marginL10{margin-left: 10px !important;}
+.marginR10{margin-right: 10px !important;}
+.marginR20{margin-right: 20px !important;}
+.marginR30{margin-right: 30px !important;}
+.marginB20{margin-bottom: 20px !important;}
+.marginB30{margin-bottom: 30px !important;}
+.marginB15{margin-bottom: 15px !important;}
+.padding5{padding:5px !important;}
+.padding10{padding:10px !important;}
+.padding15{padding:15px !important;}
+.padding20{padding:20px !important;}
+.padding5-10{padding:5px 10px !important;}
+.padding10-0{padding:10px 0 !important;}
+.padding0-10{padding:0 10px !important;}
+.padding5-0{padding:5px 0 !important;}
+.paddingLi{padding:10px 15px !important;}
+.paddingLR15{padding:0 15px !important;}
+.paddingT10{padding-top:10px !important;}
+.paddingT15{padding-top:15px !important;}
+.paddingR0{padding-right:0 !important;}
+.paddingL0{padding-left:0 !important;}
+.paddingB0{padding-bottom:0 !important;}
+.paddingT0{padding-top:0 !important;}
+.paddingL10{padding-left:10px !important;}
+.paddingL20{padding-left:20px !important;}
+.paddingL30{padding-left:30px !important;}
+.paddingL40{padding-left:40px !important;}
+.paddingR10{padding-right:10px !important;}
+.paddingR20{padding-right:20px !important;}
+.paddingB10{padding-bottom:10px !important;}
+.paddingB20{padding-bottom:20px !important;}
+.padding0{padding:0 !important;}
+.relative{position: relative !important;}
+.absolute{position:absolute !important;}
+.pointer{cursor: pointer !important;}
+.underline{text-decoration: underline !important;}
+.inlineBlock{display: inline-block !important;}
+.visHidden{visibility: hidden !important;}
+.hidden{display: none !important;}
+/*图片*/
+.fill { object-fit: fill; }
+.contain { object-fit: contain; }
+.cover { object-fit: cover; }
+.none { object-fit: none; }
+.scale-down { object-fit: scale-down; }
+
+
+/* 溢出不换行 仅 谷歌内核 支持，请慎用 */
+.oneIn{white-space:normal;overflow: hidden;display:-webkit-box;-webkit-box-orient:vertical;}
+.oneIn_1{-webkit-line-clamp:1;}
+.oneIn_2{-webkit-line-clamp:2;}
+.oneIn_3{-webkit-line-clamp:3;}
+.oneIn_10{-webkit-line-clamp:10;}
+
+/*PC端 溢出不换行 全平台浏览器 通杀*/
+.txtOneLine{
+	width:100%;
+	word-break:keep-all;/* 不换行 */
+	white-space:nowrap;/* 不换行 */
+	overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	display: block;
+}
+
+/*文字*/
+.f_10{font-size: 10px !important;}
+.f_12{font-size: 12px !important;}
+.f_14{font-size: 14px !important;}
+.f_16{font-size: 16px !important;}
+.f_18{font-size: 18px !important;}
+.f_20{font-size: 20px !important;}
+.f_24{font-size: 24px !important;}
+.f_26{font-size: 26px !important;}
+.f_28{font-size: 28px !important;}
+.f_30{font-size: 30px !important;}
+.f_35{font-size: 35px !important;}
+.f_38{font-size: 38px !important;}
+.f_40{font-size: 40px !important;}
+.f_45{font-size: 45px !important;}
+.f_50{font-size: 50px !important;}
+.f_60{font-size: 60px !important;}
+.f_70{font-size: 70px !important;}
+
+
+/*系统色*/
+.cWhite{color:white !important;}
+.bgWhite{background-color:white !important;}
+.bgEEE{background-color:#eee !important;}
+.bgCCC{background-color:#ccc !important;}
+.bgTran{background-color: transparent !important;}
+.c333{color:#333 !important;}
+.c666{color:#666 !important;}
+.c888{color:#888 !important;}
+.c999{color:#999 !important;}
+.cCCC{color:#ccc !important;}
+.cBlue{color:#5887ef !important;}
+.cGreen{color:#449d44 !important;}
+.cRed{color:#f76464 !important;}
+.cOrange{color:#ff6600 !important;}
+
+
+/*按钮禁用时灰色*/
+button[disabled]{background-color: #eee !important; border-color: transparent !important;}
+
+
+/*媒体判断*/
+@media (max-width:1200px){
+	
+}
+
+/*小屏电脑*/
+@media (max-width:991px){
+}
+
+/*平板*/
+@media (max-width:767px){
+}
+
+/*以i6p 为分界线，兼容以下屏幕*/
+@media (max-width:415px){
+}
+
+/*i6*/
+@media (max-width:375px){
+}
+
+/*安卓*/
+@media (max-width:360px){
+}
+
+/*i5*/
+@media (max-width:320px){
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

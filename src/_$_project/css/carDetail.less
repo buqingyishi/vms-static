@@ -1,0 +1,275 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title {
+  line-height: 45px;
+
+  .title_name {
+    font-size: 16px;
+    color: #333333;
+    vertical-align: middle;
+    margin-left: 11px;
+  }
+
+  .icon {
+    vertical-align: middle;
+    cursor: pointer
+  }
+
+  .icon {
+    margin-left: 10px;
+  }
+}
+
+.content {
+  background-color: #fff;
+  .userInfo {
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .car_png{
+      border-radius: 0;
+      width: 150px;
+    }
+
+    .information {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 24px;
+
+      .name {
+        color: #222222;
+        font-size: 18px;
+        font-weight: bold;
+
+        .small_name {
+          font-size: 12px;
+          font-weight: normal;
+          margin-left: 5px;
+          margin-bottom: 7px;
+        }
+
+        .yes_star {
+          margin-left: 7px;
+          font-weight: normal;
+        }
+
+        .grade {
+          color: #f5ba1a;
+          font-weight: normal;
+          vertical-align: middle;
+        }
+      }
+      
+      .phone,
+      .driver_type,
+      .task {
+        margin-top: 3px;
+        color: #666666;
+        font-size: 14px;
+      }
+      .phone{
+        margin-top: 0;
+      }
+      .task{
+        color: #D40D2C;
+      }
+
+    }
+
+    .redact,
+    .return {
+      position: absolute;
+      top: 20px;
+    }
+
+    .redact {
+      right: 100px;
+    }
+
+    .return {
+      right: 20px;
+    }
+  }
+
+  .tab {
+    padding: 5px 15px 15px 15px;
+    box-sizing: border-box;
+    .driverInfo,
+    .carInfo, .epsInfo, .addInfo {
+      padding: 5px 0 0 15px;
+
+      .driver_name,
+      .driver_number,
+      .driver_phone,
+      .driver_team,
+      .driver_license{
+        color: #222222;
+        line-height: 38px;
+        position: relative;
+
+        span {
+          color: #333333;
+          left: 140px;
+          position: absolute;
+        }
+        .img {
+          display: inline-block;
+          vertical-align: top;
+          clear: both;
+        }
+      }
+      .license_img {
+        display: flex;
+        color: #222222;
+        line-height: 38px;
+        .item {
+          display: inline-block;
+          margin-top: 13px;
+          margin-left: 55px;
+          .content_box {
+            display: inline-block;
+            text-align: center;
+
+            .box {
+              width: 200px;
+              height: 150px;
+              border: 1px solid #DDDDDD;
+              margin-right: 30px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .describe {
+              margin-left: -30px;
+            }
+          }
+        }
+      }
+      .license_img :after {
+        clear: both;
+      }
+    }
+
+    .carInfo {
+      .carInfo_top {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+
+        .car_detail {
+          width: 224px;
+          height: 126px;
+          background-color: #f6f6f6;
+          text-align: center;
+          line-height: 126px;
+          display: inline-block;
+
+          img {
+            width: 190px;
+            height: 105px;
+            display: inline-block;
+          }
+        }
+
+        .information {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 24px;
+
+          .name {
+            color: #222222;
+            font-size: 18px;
+            font-weight: bold;
+
+            .small_name {
+              font-size: 12px;
+              font-weight: normal;
+            }
+          }
+
+          .phone,
+          .driver_type,
+          .task {
+            margin-top: 5px;
+            color: #666666;
+            font-size: 14px;
+          }
+
+        }
+      }
+
+      .license_img {
+        display: flex;
+        color: #222222;
+        line-height: 38px;
+        .item {
+          margin-top: -35px;
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+
+          .content_box {
+
+            .box {
+              width: 142px;
+              height: 134px;
+              display: inline-block;
+
+              img {
+                display: inherit;
+              }
+            }
+
+            .describe {
+              vertical-align: top;
+              margin-left: 130px;
+            }
+          }
+        }
+      }
+
+      .driver_name,
+      .driver_number,
+      .driver_phone,
+      .driver_team,
+      .driver_license,
+      .license_img {
+        line-height: 40px;
+      }
+    }
+
+    .position {
+      .amap-wrapper {
+        width: 70%;
+        height: 600px;
+      }
+    }
+    .addInfo{
+      padding: 0 15px;
+    }
+
+    .history {
+        position: relative;
+      .right {
+        display: inline-block;
+        position: absolute;
+        right:0px;
+      }
+
+    }
+  }
+}
